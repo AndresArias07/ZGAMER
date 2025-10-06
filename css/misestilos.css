@@ -1,11 +1,133 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("../img/portada.png");
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    
+    width: fit-content;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.background-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/img/portada.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    z-index: -1;
+
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contact-info li,
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-link {
+    font-weight: bold;
+}
+
+.logo-text {
+    width: 800px;
+    font-size: 10em;
+    font-weight: 800;
+    letter-spacing: -5px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: #fff;
+    background-color: rgba(46, 46, 46, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.z-letter {
+    color: #ff3399;
+    text-shadow:
+        0 0 10px #ff3399,
+        0 0 20px #45353d,
+        0 0 30px #d90f74,
+        2px 2px 0 #fff,
+        -2px -2px 0 #000000;
+}
+
+.event-details {
+    width: 500px;
+    height: 70px;
+    background-color: rgba(46, 46, 46, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    line-height: 1.5;
 }
