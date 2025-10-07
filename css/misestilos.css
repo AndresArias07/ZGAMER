@@ -93,12 +93,18 @@ body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     color: #fff;
-    background-color: rgba(46, 46, 46, 0.4);
+    background-color: rgba(112, 112, 112, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 90px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-shadow:
+        0 0 10px #f0f0f0,
+        0 0 20px #45353d,
+        0 0 30px #fdfdfd,
+        2px 2px 0 #fff,
+        -2px -2px 0 #000000;
 }
 
 .z-letter {
