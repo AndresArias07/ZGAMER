@@ -103,8 +103,24 @@ body {
 
 .z-letter {
     color: #ff3399;
+    transition: 0.5s;
+}
+
+.z-letter:hover{
     text-shadow:
         0 0 10px #ff3399,
+        0 0 20px #45353d,
+        0 0 30px #d90f74,
+        2px 2px 0 #fff,
+        -2px -2px 0 #000000;
+}
+.gamer-letter{
+    transition: 0.5s;
+}
+
+.gamer-letter:hover{
+    text-shadow:
+        0 0 10px #fc94c8,
         0 0 20px #45353d,
         0 0 30px #d90f74,
         2px 2px 0 #fff,
