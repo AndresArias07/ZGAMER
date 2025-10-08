@@ -6,13 +6,12 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
     overflow-x: hidden;
 }
 
 .top-bar {
-    
     width: fit-content;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -20,6 +19,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
 .top-bar ul {
     list-style: none;
     display: flex;
@@ -36,7 +36,6 @@ body {
     background-size: cover;
     background-position: center center;
     z-index: -1;
-
 }
 
 .content-container {
@@ -49,7 +48,6 @@ body {
     min-height: 100vh;
     padding: 20px;
     text-align: center;
-
 }
 
 .header {
@@ -90,54 +88,54 @@ body {
     letter-spacing: -5px;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: relative;
     color: #fff;
     background-color: rgba(112, 112, 112, 0.4);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 90px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-shadow:
-        0 0 10px #f0f0f0,
-        0 0 20px #45353d,
-        0 0 30px #fdfdfd,
-        2px 2px 0 #fff,
-        -2px -2px 0 #000000;
 }
 
 .z-letter {
     color: #ff3399;
     transition: 0.5s;
+    text-shadow: 0 0 10px #ff3399, 0 0 20px #45353d, 0 0 30px #d90f74,
+                2px 2px 0;
 }
 
-.z-letter:hover{
-    text-shadow:
-        0 0 10px #ff3399,
-        0 0 20px #45353d,
-        0 0 30px #d90f74,
-        2px 2px 0 #fff,
-        -2px -2px 0 #000000;
-}
-.gamer-letter{
-    transition: 0.5s;
+@keyframes change-letter {
+    from {
+        text-shadow: 0 0 20px #ff3399, 0 0 20px #45353d, 0 0 30px #d90f74,
+            2px 2px 0 #ffffff63, -2px -2px 0 #000000;
+    }
+
+    to {
+        text-shadow: #fff;
+    }
 }
 
-.gamer-letter:hover{
-    text-shadow:
-        0 0 10px #fc94c8,
-        0 0 20px #45353d,
-        0 0 30px #d90f74,
-        2px 2px 0 #fff,
-        -2px -2px 0 #000000;
+.gamer-letter {
+    animation: change-letter 2s linear 0s infinite alternate;
+}
+
+@keyframes change-letter {
+    from {
+        text-shadow: 0 0 20px #ff3399, 0 0 20px #45353d, 0 0 30px #d90f74,
+            2px 2px 0 #ffffff63, -2px -2px 0 #000000;
+    }
+
+    to {
+        text-shadow: #fff;
+    }
 }
 
 .event-details {
     width: 500px;
     height: 70px;
     background-color: rgba(46, 46, 46, 0.4);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
