@@ -76,9 +76,13 @@ body {
     color: white;
     text-decoration: none;
 }
-
 .social-link {
     font-weight: bold;
+    transition: 0.2s;
+}
+
+.social-link:hover{
+    color: #ff3399;
 }
 
 .logo-text {
