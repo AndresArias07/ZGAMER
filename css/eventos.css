@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;;
+}
+
+body{
+    background-color: #1b1b1b;
+}
+
+/* BACKGROUND */
+.background-container{
+    position: absolute;
+    background-image: url("../img/Eventos/bg.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* BARRA (TOP DE CONTACTOS) */
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.top-bar {
+    width: fit-content;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contact-info li,
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+.social-link {
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.social-link:hover{
+    color: #ff3399;
+}
+
+/* TITULO (EVENTOS) */
+
+.title-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.logo-text {
+    width: 800px;
+    font-size: 9em;
+    font-weight: 800;
+    letter-spacing: -5px;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    color: #fff;
+    background-color: rgba(112, 112, 112, 0.4);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.events-title{
+        animation: neon-letter 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes neon-letter {
+    0% { text-shadow: 2px 2px 20px #ff3399;}
+    100% { text-shadow: 1px 1px 2px #ff3399; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
