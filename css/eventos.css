@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
 }
 
 body{
@@ -12,11 +13,14 @@ body{
 /* BACKGROUND */
 .background-container{
     position: absolute;
-    background-image: url("../img/Eventos/bg.png");    
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 20%, transparent 70%), url("../img/Eventos/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100vh;
+    filter: brightness(70%);
+    z-index: 0;
 }
 
 /* BARRA (TOP DE CONTACTOS) */
@@ -29,7 +33,7 @@ body{
     width: 100%;
     padding: 10px 20px;
     box-sizing: border-box;
-    z-index: 10;
+    z-index: 4;
 }
 
 .top-bar {
@@ -74,8 +78,6 @@ body{
 /* TITULO (EVENTOS) */
 
 .title-container {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +113,43 @@ body{
     0% { text-shadow: 2px 2px 20px #ff3399;}
     100% { text-shadow: 1px 1px 2px #ff3399; }
 }
+
+
+/* CONTENIDO DE LOS EVENTOS (CONTENT CONTAINER) */
+
+.content-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.title-content-events{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    flex-basis: auto ;
+}
+
+.title-content-events img{
+    max-width: auto;
+    max-height: auto;
+}
+
+.gravity{
+    filter: drop-shadow(0px 0px 10px rgb(14, 167, 255));
+    animation: gravity 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes gravity {
+    0% {transform: translateY(0)}
+    100% {transform: translateY(-50px)}
+}
+
+
+
 
 
 
