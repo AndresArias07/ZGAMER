@@ -119,8 +119,9 @@ body{
 
 .content-container{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: black;
+    display: block;
 }
 
 .title-content-events{
@@ -130,7 +131,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    flex-basis: auto ;
+    background-color: #000;
 }
 
 .title-content-events img{
@@ -145,7 +146,7 @@ body{
 
 @keyframes gravity {
     0% {transform: translateY(0)}
-    100% {transform: translateY(-50px)}
+    100% {transform: translateY(-30px)}
 }
 
 
@@ -158,37 +159,248 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    background-color: #000000;
+    height: 100vh;
 }
 
-.card{
+.card-content{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 90px;
     width: 400px;
     height: 500px;
     border-radius: 20px;
+    padding: 5px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background: linear-gradient(323deg,rgba(0, 0, 0, 0.7) 0%, rgba(31, 31, 31, 1) 100%);
+    background: linear-gradient(323deg,rgba(0, 0, 0, 0.7) 0%, #1f1f1f 100%);
     transition: 0.7s;
 
 }
-.card:hover{
+.card-content:hover{
     width: 420px;
     height: 550px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background: linear-gradient(323deg,rgba(0, 0, 0, 0.7) 0%, rgba(31, 31, 31, 1) 100%);
-    box-shadow: 10px 10px 4px #ff3399;
+    box-shadow: 10px 10px 3px  #ff3399;
 }
 
 .imgcard{
     width: 100%;
     padding: 20px;
+    border-radius: 40px;
 }
 
 .title-card{
     text-align: center;
     font-weight: 500;
 }
+
+.card-content p{
+    text-align: justify;
+    font-weight: 300;
+    margin-top: 20px;
+    margin: 10px;
+    overflow-y: visible;
+    max-width: 100%;
+    max-height: 50vh;
+}
+
+.link{
+    margin-top: 20px;
+    height: 60px;
+    margin: 10px;
+}
+
+.btn-card{
+    margin-top: 10px;
+    background: linear-gradient(150deg,rgba(0, 0, 0, 0.7) 0%, #1f1f1f 100%);
+    width: 100%;
+    height: 70%;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-card:hover{
+    text-shadow: 0px 0px 5px #00ffff;
+    background-color: #ff3399;
+    box-shadow: 0px 0px 10px #ff0080;
+    height: 90%;
+}
+
+.btn-card {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.btn-card:hover{
+    letter-spacing: 20px;
+}
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+    height: 200px;
+    background-color: rgba(39, 38, 38, 0.4);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* inicio iconos */
+.iconos {
+
+    width: 33.33vw;
+    top: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(49, 49, 49, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    gap: 15px;
+    overflow: hidden;
+    border-radius: 27px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.card a {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(117, 117, 117, 0);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.card a:hover {
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+/*instagram*/
+.card a:nth-child(1):hover {
+    background-color: #d62976;
+}
+
+/* twitter*/
+.card a:nth-child(2):hover {
+    background-color: #00acee;
+}
+
+/* linkdin*/
+.card a:nth-child(3):hover {
+    background-color: #0072b1;
+}
+
+/* Whatsapp*/
+.card a:nth-child(4):hover {
+    background-color: #25d366;
+}
+
+.card a:active {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+/*first-child*/
+.card a svg:first-child {
+    display: flex;
+    scale: 1.3;
+    position: absolute;
+    width: 17px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.card a svg:first-child path {
+    fill: rgb(255, 255, 255);
+}
+
+.card a:hover svg:first-child {
+    transform: translateY(-40px);
+    opacity: 0;
+}
+
+/*last-child*/
+.card a svg:last-child {
+    display: flex;
+    position: absolute;
+    width: 17px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.card a svg:last-child path {
+    fill: rgb(255, 255, 255);
+}
+
+.card a:hover svg:last-child {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* fin iconos */
+/*inicio logo text*/
+.logoZgamer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.33vw;
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: -5px;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    color: #fff;
+}
+
+.z-letter-logo {
+    color: #ff3399;
+    transition: 0.5s;
+    text-shadow: 0 0 10px #ff3399, 0 0 20px #45353d, 0 0 30px #d90f74,
+        2px 2px 0;
+}
+
+/* fin logo text */
+/*inicio ayuntamiento*/
+.ayuntamientozgz {
+    display: flex;
+    padding-left: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ayuntamientozgz img {
+    border-radius: 50px;
+}
+
+/* fin ayuntmiento */
+/* fin footer */
 
 
 
