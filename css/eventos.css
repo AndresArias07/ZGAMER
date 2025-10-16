@@ -119,24 +119,25 @@ body{
 
 .content-container{
     width: 100%;
-    height: 120vh;
-    background-color: black;
-    display: block;
+    height: 100%;
+    background-color: rgb(140, 151, 146);
 }
 
 .title-content-events{
     width: 100%;
-    height: 30%;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     background-color: #000;
+
+
 }
 
 .title-content-events img{
     max-width: 70%;
-    max-height: auto;
+    height: 60%;
 }
 
 .gravity{
@@ -151,24 +152,23 @@ body{
 
 
 
-
 /* CONTENIDO DE TORNEO (CARDS TORNEO) */
 .content-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
     background-color: #000000;
-    height: 100vh;
+    height: 700px;
 }
+
 
 .card-content{
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
     width: 400px;
-    height: 500px;
+    height: 550px;
+    margin-left: 50px;
     border-radius: 20px;
     padding: 5px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -179,9 +179,9 @@ body{
 .card-content:hover{
     width: 420px;
     height: 550px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(323deg,rgba(0, 0, 0, 0.7) 0%, rgba(31, 31, 31, 1) 100%);
-    box-shadow: 10px 10px 3px  #ff3399;
+    box-shadow: 0px 0px 50px  #ff3399;
 }
 
 .imgcard{
@@ -191,6 +191,7 @@ body{
 }
 
 .title-card{
+    font-size: 20px;
     text-align: center;
     font-weight: 500;
 }
@@ -200,15 +201,17 @@ body{
     font-weight: 300;
     margin-top: 20px;
     margin: 10px;
-    overflow-y: visible;
+    overflow-y: hidden;
     max-width: 100%;
-    max-height: 50vh;
+    padding-bottom: auto;
 }
 
 .link{
-    margin-top: 20px;
-    height: 60px;
-    margin: 10px;
+    height: 80px;
+    margin-top: 18px;
+    padding: 5px;
+    position: relative;
+    bottom: 20px;
 }
 
 .btn-card{
@@ -219,29 +222,34 @@ body{
     cursor: pointer;
     border-radius: 50px;
     transition: 0.5s ease-in-out;
-}
+    margin-top: 30px;
 
-.btn-card:hover{
-    text-shadow: 0px 0px 5px #00ffff;
-    background-color: #ff3399;
-    box-shadow: 0px 0px 10px #ff0080;
-    height: 90%;
-}
-
-.btn-card {
-    color: #00ffff;
+    color: #ff90a8;
     text-decoration: none;
     font-size: 18px;
     transition: 0.5s;
     font-size: 20px;
 }
 
+
 .btn-card:hover{
-    letter-spacing: 20px;
+    text-shadow: 0px 0px 5px #00ffff;
+    background-color: #ff3399;
+    box-shadow: 0px 0px 10px  #ff0080;
+    height: 90%;
 }
 
 
+.btn-card:hover{
+    letter-spacing: 15px;
+    font-size: 25px;
+}
+
+
+
+
 /* FOOTER */
+/* inicio footer */
 .footer {
     display: flex;
     flex-direction: row;
@@ -403,16 +411,52 @@ body{
 /* fin footer */
 
 
+@keyframes change-letter {
+    from {
+        text-shadow: 0 0 20px #ff3399, 0 0 20px #45353d, 0 0 30px #d90f74,
+            2px 2px 0 #ffffff63, -2px -2px 0 #000000;
+    }
 
+    to {
+        text-shadow: #fff;
+    }
+}
 
+.gamer-letter {
+    animation: change-letter 2s linear 0s infinite alternate;
+}
 
+@keyframes change-letter {
+    from {
+        text-shadow: 0 0 20px #ff3399, 0 0 20px #45353d, 0 0 30px #d90f74,
+            2px 2px 0 #ffffff63, -2px -2px 0 #000000;
+    }
 
+    to {
+        text-shadow: #fff;
+    }
+}
 
-
-
-
-
-
+.event-details {
+    width: 500px;
+    height: 70px;
+    background-color: rgba(46, 46, 46, 0.4);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
 
 
 
