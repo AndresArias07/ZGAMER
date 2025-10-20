@@ -106,7 +106,7 @@ body a :not(.socialSvg ):not(.perfil):not(.menu) {
     margin-top: 160px;
     margin-left: 50px;
     gap: 50px;
-    width: 90px;
+    width: 100px;
     height: 80vh;
     background-color: rgba(39, 38, 38, 0.4);
     backdrop-filter: blur(10px);
@@ -115,7 +115,20 @@ body a :not(.socialSvg ):not(.perfil):not(.menu) {
     box-shadow: 0 0 25px rgba(235, 235, 235, 0.4s ease);
     border: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 2;
+    transition: 1s alig;
 }
+
+.side-bar:hover{
+    width: 200px;
+    align-items: end;
+}
+
+
+
+
+
+
+
 .perfil{
     position: relative;
     padding-top: 50px;
