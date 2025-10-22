@@ -11,7 +11,7 @@ body {
 }
 .background-container{
     position: absolute;
-     background-image: linear-gradient(to top, rgba(0,0,0,1) 20%, transparent 70%), url("../img/Invitados/imagen_fondo.png"); 
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 20%, transparent 70%), url("../img/Invitados/imagen_fondo.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -67,6 +67,108 @@ body {
 .social-link:hover{
     color: #ff3399;
 }
+
+/* BOTON INICIO (Z) */
+.boton-inicio  {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 90px;
+    height: 10vh;
+    background-color: rgba(39, 38, 38, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 40px;
+    box-shadow: 0 0 25px rgba(235, 235, 235, 0.4s ease);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+
+
+.boton-inicio-z{
+    display: flex;
+    padding-left: 0 !important;
+    color: #ff3399;
+    text-decoration: none !important;
+    transition: 0.5s;
+    font-size: 3em !important;
+    font-weight: 800!important;
+    transition: transform 0.4s ease-in-out ,text-shadow 0.4s ease-in-out!important;
+}
+
+
+.boton-inicio-z:hover{
+    transform: scale(1.04) !important;
+    text-shadow: 0 0 10px #ff3399, 0 0 20px #45353d, 0 0 30px #d90f74,
+    2px 2px 0 !important;
+}
+/* FIN DEL BOTON DE INICIO (Z) */
+
+/* MENU DE NAVEGACION */
+.side-bar{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    margin-left: 50px;
+    gap: 50px;
+    width: 100px;
+    height: 80vh;
+    background-color: rgba(39, 38, 38, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 100px;
+    box-shadow: 0 0 25px rgba(235, 235, 235, 0.4s ease);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 2;
+    transition: 0.8s ease;
+}
+
+.side-bar:hover{
+    width: 200px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: rgb(54, 53, 53);
+}
+
+
+.side-bar-sections p a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+.side-bar .side-bar-sections p a:hover{
+    margin-top: 40px;
+    font-size: 25px;
+    color: #d62976;
+}
+
+
+
+.perfil{
+    position: relative;
+    padding-top: 50px;
+}
+
+.side-bar i,
+.side-bar a i,
+.side-bar a,
+.side-bar svg,
+.side-bar .card a{
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    margin: 0 !important;
+}
+
+/* FIN DE MENU DE NAVEGACION */
+
 
 /* TITULO (EVENTOS) */
 
@@ -281,7 +383,7 @@ transition: 1s;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 280px;
+gap: 100px;
 padding-top: 240px;
 }
 

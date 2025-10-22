@@ -61,6 +61,7 @@ body a :not(.socialSvg ):not(.perfil):not(.menu) {
     padding: 10px 20px;
 }
 
+/* BOTON INICIO (Z) */
 .boton-inicio  {
     display: flex;
     position: fixed;
@@ -80,7 +81,7 @@ body a :not(.socialSvg ):not(.perfil):not(.menu) {
     z-index: 2;
 }
 
-/* BOTON INICIO (Z) */
+
 .boton-inicio-z{
     display: flex;
     padding-left: 0 !important;
@@ -144,8 +145,6 @@ body a :not(.socialSvg ):not(.perfil):not(.menu) {
     font-size: 25px;
     color: #d62976;
 }
-
-
 
 
 
