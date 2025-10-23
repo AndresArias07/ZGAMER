@@ -12,8 +12,6 @@ body{
 
 
 
-
-
 /* BACKGROUND */
 .background-container{
     position: absolute;
@@ -164,10 +162,6 @@ body{
     color: #d62976;
 }
 
-
-
-
-
 .perfil{
     position: relative;
     padding-top: 50px;
@@ -223,6 +217,143 @@ body{
     0% { text-shadow: 2px 2px 20px #ff3399;}
     100% { text-shadow: 1px 1px 2px #ff3399; }
 }
+
+/* VENTANA MODAL */
+.container-modal{
+    background-image: url("../img/Eventos/cards/card1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: opacity(0.5px);
+    position: fixed;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    top: 10%;
+    left: 16%;
+    width: 70%;
+    height: 80%;
+    padding: 3.5rem;
+    background-color: rgba(39, 38, 38, 0.9);
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px  #ff3399;
+    text-align: center;
+    z-index: 20; 
+    transition: 0.5s;
+}
+
+.container-modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.container-modal h2{
+    font-size: 50px;
+}
+
+.container-modal p{
+    font-size: 17px;
+}
+
+.form-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.form-modal input::placeholder:focus{
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+.form-modal label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.nombre-input{
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(89, 88, 88, 0.5);
+    transition: 0.3s;
+}
+
+.nombre-input:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    box-shadow: 0px 0px 30px #ff0073;
+}
+
+
+.email-input{
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(89, 88, 88, 0.5);
+    transition: 0.3s;
+}
+
+.email-input:focus{
+    outline: none;
+    box-shadow: 0px 0px 20px#ffcc00;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+
+.btns{
+    margin-top: 20px; 
+    width: 100%;
+    height: auto;
+}
+
+.btn{
+    margin: 20px;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn-submit{
+    background-color: rgba(41, 109, 24, 0.5);
+    width: 200px;
+    height: 80px;
+}
+
+.btn-cancel{
+    background-color: rgba(193, 18, 30, 0.568);
+    width: 200px;
+    height: 80px;
+}
+
+.btn-submit:hover{
+    background-color: #40ca00;
+    width: 300px;
+}
+.btn-cancel:hover{
+    background-color: #c1121f;
+    width: 300px;
+}
+
+
+
+/* FIN VENTANA MODAL */
+
+
 
 
 /* CONTENIDO DE LOS EVENTOS (CONTENT CONTAINER) */
