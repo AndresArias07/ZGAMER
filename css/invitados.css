@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;;
 }
-
+ 
 
 body {
     background-color: #000000;
@@ -210,6 +210,8 @@ body {
     0% { text-shadow: 2px 2px 20px #ff3399;}
     100% { text-shadow: 1px 1px 2px #ff3399; }
 }
+
+/* SECCION INVITADOS */
 .main{
     display: flex;
     flex-direction: column;
@@ -218,6 +220,7 @@ body {
     padding-bottom: 100px;
 }
 
+/*RUBIUS*/
 .invitados-rubius{
 display: flex;
 justify-content: center;
@@ -225,6 +228,8 @@ align-items: center;
 gap: 280px;
 padding-top: 240px;
 }
+
+/*TEXTO DE INVITADOS*/
 .invitados-rubius-texto {
 flex-direction: column;
 width: 410px;
@@ -240,6 +245,7 @@ transition: 1s;
     padding: 20px;
 }
 
+/*IMAGENES DE INVITADOS */
 .invitados-rubius-imagen{
     width: 550px;
     height: 430px;
@@ -255,6 +261,7 @@ transition: 1s;
     bottom: 0;
 }
 
+/*XOCAS*/
 .invitados-xocas{
 display: flex;
 justify-content: center;
@@ -262,6 +269,8 @@ align-items: center;
 gap: 280px;
 padding-top: 240px;
 }
+
+/*TEXTO DE INVITADOS*/
 .invitados-xocas-texto {
 flex-direction: column;
 width: 410px;
@@ -275,6 +284,8 @@ transition: 1s;
     box-shadow: 10px 10px 4px #ff3399;
     padding: 20px;
 }
+
+/*IMAGENES DE INVITADOS */
 .invitados-xocas-imagen{
     width: 520px;
     height: 440px;
@@ -294,6 +305,7 @@ transition: 1s;
     left: 60px;
 }
 
+/*AXOZER*/
 .invitados-axozer{
 display: flex;
 justify-content: center;
@@ -301,6 +313,8 @@ align-items: center;
 gap: 280px;
 padding-top: 240px;
 }
+
+/*TEXTO DE INVITADOS*/
 .invitados-axozer-texto {
 flex-direction: column;
 width: 410px;
@@ -315,6 +329,8 @@ transition: 1s;
     box-shadow: 10px 10px 4px #ff3399;
     padding: 20px;
 }
+
+/*IMAGENES DE INVITADOS */
 .invitados-azoxer-imagen{
     width: 550px;
     height: 340px;
@@ -337,6 +353,7 @@ transition: 1s;
     padding-top: 240px;
 }
 
+/*CRISTININI*/
 .invitados-cristinini{
 display: flex;
 justify-content: center;
@@ -344,6 +361,8 @@ align-items: center;
 gap: 280px;
 padding-top: 240px;
 }
+
+/*TEXTO DE INVITADOS*/
 .invitados-cristinini-texto {
 flex-direction: column;
 width: 410px;
@@ -358,7 +377,7 @@ transition: 1s;
     box-shadow: 10px 10px 4px #ff3399;
     padding: 20px;
 }
-
+/*IMAGENES DE INVITADOS */
 .invitados-cristinini-imagen{
     width: 550px;
     height: 340px;
@@ -379,6 +398,7 @@ transition: 1s;
     right: 30px;
 }
 
+/*MENARD*/
 .invitados-menard{
 display: flex;
 justify-content: center;
@@ -387,6 +407,7 @@ gap: 100px;
 padding-top: 240px;
 }
 
+/*TEXTO DE INVITADOS*/
 .invitados-menard-texto {
 flex-direction: column;
 width: 410px;
@@ -402,6 +423,7 @@ transition: 1s;
     padding: 20px;
 }
 
+/*IMAGENES DE INVITADOS */
 .invitados-menard-imagen{
     width: 770px;
     height: 405px;
@@ -422,6 +444,7 @@ transition: 1s;
     right: 50px;
 }
 
+/*FAKER*/
 .invitados-faker{
 display: flex;
 justify-content: center;
@@ -430,6 +453,7 @@ gap: 280px;
 padding-top: 240px;
 }
 
+/*TEXTO DE INVITADOS*/
 .invitados-faker-texto {
 flex-direction: column;
 width: 410px;
@@ -445,6 +469,7 @@ transition: 1s;
     padding: 20px;
 }
 
+/*IMAGENES DE INVITADOS */
 .invitados-faker-imagen{
     width: 630px;
     height: 405px;
