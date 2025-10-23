@@ -64,7 +64,8 @@ body a :not(.socialSvg ):not(.perfil):not(.menu):not(.side-bar-sections) {
 /* BOTON INICIO (Z) */
 .boton-inicio  {
     display: flex;
-    position: fixed;
+    position: absolute;
+    left: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -134,13 +135,13 @@ body a :not(.socialSvg ):not(.perfil):not(.menu):not(.side-bar-sections) {
     width: 250px;
     font-size: 20px;
     border-radius: 50px;
-    background-color: rgb(54, 53, 53);
+    background-color: rgba(54, 53, 53, 0.425);
 }
 .side-bar:hover i{
     margin-left: 0;
     transition: 2s ease ;
 }
-.side-bar a p{ 
+.side-bar a:not(i) p{ 
     display: inline;
     position: relative  ;
     width: 0px;
@@ -169,11 +170,6 @@ body a :not(.socialSvg ):not(.perfil):not(.menu):not(.side-bar-sections) {
     
 }
 
-
-
-
-
-
 .side-bar i,
 .side-bar a i,
 .side-bar a,
@@ -182,6 +178,11 @@ body a :not(.socialSvg ):not(.perfil):not(.menu):not(.side-bar-sections) {
     padding-left: 5px !important;
     padding-top: 0 !important;
     margin-top: 50px !important;
+}
+#img-juegos-invitados{
+    position: relative;
+    top: 24px;
+    left: -30px !important;
 }
 
 /* FIN DE MENU DE NAVEGACION */
