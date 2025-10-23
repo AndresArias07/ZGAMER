@@ -33,13 +33,13 @@ body .content-estaciones p {
     font-weight: 200;
 }
 
-body i:not(.perfil):not(.menu):not(.fa-solid):not(.fa-plus):not(.fa-xl) {
+body i:not(.perfil):not(.menu):not(.fa-solid):not(.fa-plus):not(.fa-xl):not(.side-bar-sections){
     font-weight: 200;
     padding-left: 40px;
     padding-top: 40px;
 }
 
-body a :not(.socialSvg ):not(.perfil):not(.menu) {
+body a :not(.socialSvg ):not(.perfil):not(.menu):not(.side-bar-sections) {
     font-weight: 200;
     padding-left: 50px;
 }
@@ -112,9 +112,9 @@ body a :not(.socialSvg ):not(.perfil):not(.menu) {
     align-items: center;
     margin-top: 160px;
     margin-left: 50px;
-    gap: 50px;
     width: 100px;
     height: 80vh;
+    gap: 38px;
     background-color: rgba(39, 38, 38, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8px);
@@ -124,43 +124,64 @@ body a :not(.socialSvg ):not(.perfil):not(.menu) {
     z-index: 2;
     transition: 0.8s ease;
 }
-
+.side-bar a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    
+}
 .side-bar:hover{
-    width: 200px;
+    width: 250px;
     font-size: 20px;
     border-radius: 50px;
     background-color: rgb(54, 53, 53);
 }
-
-
-.side-bar-sections p a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
+.side-bar:hover i{
+    margin-left: 0;
+    transition: 2s ease ;
 }
+.side-bar a p{ 
+    display: inline;
+    position: relative  ;
+    width: 0px;
+    color: transparent;
+    margin-left: -40px !important;
+    overflow: hidden;
+    white-space: nowrap ;
+    transition: opacity 1.8s ease;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;     
 
-
-.side-bar .side-bar-sections p a:hover{
-    margin-top: 40px;
-    font-size: 25px;
+}    
+.side-bar:hover a p:hover{
     color: #d62976;
+    transform: scale(1.2);
+    font-weight: 700 !important;
 }
-
-
-
-.perfil{
+.side-bar:hover a p{
     position: relative;
-    padding-top: 50px;
+    color: white;
+    top: 40px;    
+    left: 20px;
+    opacity: 1;
+    width: 200px;
+    
 }
+
+
+
+
+
 
 .side-bar i,
 .side-bar a i,
 .side-bar a,
 .side-bar svg,
 .side-bar .card a{
-    padding-left: 0 !important;
+    padding-left: 5px !important;
     padding-top: 0 !important;
-    margin: 0 !important;
+    margin-top: 50px !important;
 }
 
 /* FIN DE MENU DE NAVEGACION */
