@@ -266,7 +266,12 @@ body{
     z-index: 20; 
     transition: 0.5s;
 }
-
+.error {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px red;
+    font-size: 0.9em;
+    display: block; /* Para que el mensaje de error ocupe su propia línea */
+}
 .container-modal.active{
     opacity: 1;
     visibility: visible;

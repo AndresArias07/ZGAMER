@@ -11,10 +11,14 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
         />
-        <script
-        src="https://kit.fontawesome.com/81d835c9f5.js"
-        crossorigin="anonymous"
-        ></script>
+        <!-- SCRIPTS -->
+        <script src="https://kit.fontawesome.com/81d835c9f5.js" crossorigin="anonymous"></script>
+
+        <!-- JQUERY VALIDATOR -->
+        <script src="../js/lib/jquery.validate.min.js"></script>
+
+
+
 
         <title>Zgamer - Eventos</title>
     </head>
@@ -35,7 +39,7 @@
                 <li><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff; padding: 0px 20px 0px 0px;"></i><a href="#" class="social-link">@Z.gamer</a></li>
                 <li><i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff; padding: 0px 20px 0px 0px;"></i><a href="#" class="social-link">+34 4984146516</a></li>
                 <li><i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff; padding: 0px 20px 0px 0px;"></i><a href="#" class="social-link">@Z.gamer</a></li>
-            </ul>
+            </ul>            
         </nav>
     </header>
         <!-- FIN CONTACTOS (TOP BAR) -->
@@ -58,20 +62,21 @@
             repellat perferendis officia nesciunt reprehenderit ducimus nihil
             dolore, fuga quo! Et, labore!
         </p>
-        <form class="form-modal">
+        <form class="form-modal" id="form1">
             <label for="nombre">Nombre</label>
-            <input type="text" class="nombre-input" placeholder="Jose" />
+            <input type="text" class="nombre-input" name="nombre" placeholder="Jose" />
 
             <label for="nombre">Email</label>
             <input
             type="email"
             class="email-input"
+            name="email"
             placeholder="exameple@gmail.com"
             />
 
             <div class="btns">
             <button type="submit" class="btn-submit btn">Inscribirse</button>
-            <button type="submit" class="btn-cancel btn">Cancelar</button>
+                <button type="submit" class="btn-cancel btn">Cancelar</button>
             </div>
         </form>
         </div>
@@ -335,6 +340,9 @@
         </div>
         </div>
 
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="../js/lib/jquery.validate.min.js"></script>
         <script src="../js/eventos.js"></script>
     </body>
     </html>

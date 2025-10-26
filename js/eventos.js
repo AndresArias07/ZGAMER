@@ -87,3 +87,38 @@
     }
 
 /*FIN DE LA VENTANA MODAL */
+
+// VALIDACION DEL FORMULARIO
+$(document).ready(function() {
+    // 1. Selecciona el formulario usando su ID e inicializa la validación
+    $("#form1").validate({
+        
+        // 2. Define las REGLAS de validación
+        rules: {
+            nombre: {
+                required: true // El campo 'name="nombre"' es obligatorio
+            },
+
+            email: {
+                required: true, // El campo 'name="email"' es obligatorio
+                email: true     // Y debe ser un formato de correo válido
+            }
+        },
+        
+        // 3. Define los MENSAJES personalizados
+        messages: {
+            nombre: {
+                required: "Por favor, introduce tu nombre.",
+            },
+            email: {
+                required: "Necesitamos tu dirección de correo electrónico.",
+                email: "Por favor, introduce un formato de email válido (ej: usuario@dominio.com).",
+            },
+        },
+
+        // Opcional: Función que se ejecuta si el formulario es válido
+        submitHandler: function(form) {
+            form.submit(); // Envía el formulario si todo es correcto
+        }
+    });
+});
